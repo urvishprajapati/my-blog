@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog-website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>The Story Haven</h1>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <button>☰</button>
+      </div>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog-posts">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home-content">
+        <h1>Welcome to <span class="highlight">The Story Haven</span></h1>
+        <p>Discover a world of captivating stories, insightful tips, and creative inspirations. Whether you're here for lifestyle guides, tech innovations, or travel tales, there's something for everyone.</p>
+        <a href="#blog-posts" class="btn">Explore Blogs</a>
+      </div>
+      <div class="home-image">
+        <img src="./images/home-blog-image.jpg" alt="A cozy desk with a notebook and coffee">
+      </div>
+      <div class="home-highlights">
+        <div class="highlight-box">
+          <h3>Latest Trends</h3>
+          <p>Stay updated with the latest trends in technology, travel, and more!</p>
+        </div>
+        <div class="highlight-box">
+          <h3>Inspiring Stories</h3>
+          <p>Read stories that inspire and ignite your imagination.</p>
+        </div>
+        <div class="highlight-box">
+          <h3>Practical Tips</h3>
+          <p>Find practical advice to simplify your daily life.</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <p>
+          Welcome to <strong>The Story Haven</strong>! Our platform is a space for sharing exciting stories, tips, and insights across a variety of topics. From technology and lifestyle to travel and entertainment, we aim to inspire, educate, and entertain.
+        </p>
+    
+        <h3>Our Mission</h3>
+        <p>
+          To provide a creative and inspiring hub where ideas come alive, knowledge is shared, and connections are made. We are passionate about delivering high-quality content that adds value to our readers' lives.
+        </p>
+    
+        <h3>Why Choose Us?</h3>
+        <p>
+          At <strong>The Story Haven</strong>, we focus on delivering thoughtful and engaging content tailored to a diverse audience. Whether you're here to learn, explore, or relax, our blog offers something for everyone.
+        </p>
+    
+        <img src="./images/about-us-image.jpg" alt="About Us Image" class="about-image">
+      </div>
+    </section>
+        
+<!-- Blog Posts Section -->
+<section id="blog-posts">
+  <h2>Our Blog</h2> <!-- Center-aligned heading -->
+  <div class="blog-container"> <!-- Wrapper for the blog cards -->
+    <!-- First Blog Post -->
+    <article class="post-card">
+      <img src="./images/our-blog-img1.jpg" alt="Post Image">
+      <h3>How to Stay Productive While Working from Home</h3>
+      <p class="post-preview">
+        Working from home can be both rewarding and challenging. In this blog post, we explore key strategies for staying productive.
+        <span class="post-hidden-content" style="display: none;">
+          Create a dedicated workspace, establish a daily routine, and minimize distractions. Implementing these tips will help you maximize efficiency and maintain work-life balance.
+        </span>
+      </p>
+      <button class="read-more-btn">Read More</button>
+    </article>
+
+    <!-- Second Blog Post -->
+    <article class="post-card">
+      <img src="./images/our-blog-img2.jpg" alt="Post Image">
+      <h3>10 Essential Tips for First-Time Homebuyers</h3>
+      <p class="post-preview">
+        Buying your first home can be overwhelming, but it doesn't have to be. This guide covers essential tips for navigating the process.
+        <span class="post-hidden-content" style="display: none;">
+          From budgeting to understanding market trends, these steps will help you make informed decisions and secure your dream home.
+        </span>
+      </p>
+      <button class="read-more-btn">Read More</button>
+    </article>
+
+    <!-- Third Blog Post -->
+    <article class="post-card">
+      <img src="./images/our-blog-img3.jpg" alt="Post Image">
+      <h3>The Ultimate Guide to Healthy Eating on a Budget</h3>
+      <p class="post-preview">
+        Healthy eating doesn't have to break the bank. In this post, we share tips on how to plan nutritious meals on a budget.
+        <span class="post-hidden-content" style="display: none;">
+          Learn about affordable superfoods, meal prep ideas, and shopping hacks to maintain a healthy lifestyle without overspending.
+        </span>
+      </p>
+      <button class="read-more-btn">Read More</button>
+    </article>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out through the form below!</p>
+      <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 My Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
